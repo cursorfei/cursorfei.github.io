@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+
+
+    <link rel="dns-prefetch" href="https://imsun.github.io"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.proxy.ustclug.org"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            HTTP状态码 | 
+        
+        Frank&#39;s space
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="Android,Linux,JavaWEB,Http">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.proxy.ustclug.org/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Frank&#39;s space">
+    <meta name="msapplication-starturl" content="https://frank-ho.github.io/2018/06/19/HTTP状态码/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Frank&#39;s space">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="google2f9be32c76c43d2c" />
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="/atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://frank-ho.github.io/2018/06/19/HTTP状态码/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="HTTP状态码 | Frank&#39;s space">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="Http"> 
+
+    
+        <meta property="article:published_time" content="Tue Jun 19 2018 21:54:26 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 12 2019 14:03:43 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://frank-ho.github.io/2018/06/19/HTTP状态码/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://frank-ho.github.io/2018/06/19/HTTP状态码/index.html",
+    "headline": "HTTP状态码",
+    "datePublished": "Tue Jun 19 2018 21:54:26 GMT+0800",
+    "dateModified": "Tue Mar 12 2019 14:03:43 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Frank-HO",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Welcome to Frank's space"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Frank&#39;s space",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",HttpAndroid,Linux,JavaWEB",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-121092598-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1xx消息"><span class="post-toc-number">1.</span> <span class="post-toc-text">1xx消息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2xx成功"><span class="post-toc-number">2.</span> <span class="post-toc-text">2xx成功</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3xx重定向"><span class="post-toc-number">3.</span> <span class="post-toc-text">3xx重定向</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4xx客户端错误"><span class="post-toc-number">4.</span> <span class="post-toc-text">4xx客户端错误</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5xx服务器错误"><span class="post-toc-number">5.</span> <span class="post-toc-text">5xx服务器错误</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                HTTP状态码
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Frank-HO</strong>
+        <span>6月 19, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACX0lEQVR42u3aQW7DMAwEQP//0+0Dijq7lK04wfgUJIqs0UEiSB4/X/0ceHh4eHh4eHh4D+Md8XP+r7/f/x3f/ne4Njw8PLwtvBdH7emYc3wyT/v9i7fj4eHhbeSdH9nnnxNestDzd52PwcPDw3sybxZqr1wkeHh4eJ/Oa4/7dmvw8PDwPoU3W2KbesjneUOuBQ8PDy/m5UWm/Z+31vfw8PDwAl7d0hRvQZ6wOB9frxAPDw/vZt5V4XKOnLVw5VuAh4eHt4eXT9GWvlZSDzkYDw8Pbz8vD53bX/OU7uxzce/h4eHhXcRbKYatF9JWCmZ4eHh47+XdkXjNx+TJi2gT8fDw8Lbz2tJXexnkb5mtAQ8PD28PLy9NteWrJCGbj4+Cezw8PLybeXnKNQ9224aDljdsHcDDw8O7iDdrC0gO+lmKIZ/53y3Dw8PDu5mXt0BdEOw+oacMDw8P71JePml7nczStW3Qj4eHh7ef1y4oP8qLwv9y4wIeHh7e3bw88M0P8XzMLIx+cSHh4eHh3cxrp0sC3zwcb7cgKqrh4eHhbeHNLoYWv9LaVVxCeHh4eBt5bYEqSqouJy/aBAceHh7eTt7slSvNBG0qZJiMwMPDw7uU1z4Ju116shHDiwEPDw/vBt4RP/lCVxoRZslcPDw8vP289csgP+jXtwMPDw/vObw8bTq7SPLtW5kZDw8P75m8/L9tQJw3ItRZajw8PLy38qJCVJDCmLUvbAqp8fDw8C5KRiQLnaUVrrpa8PDw8Pbw2lanupxfthTMmgbw8PDw9vC+78HDw8PDw8PDw3vA8wtEu/cTmKsIkQAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Http/">Http</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2018/06/19/HTTP状态码/" class="leancloud-views_num" data-flag-title="HTTP状态码">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=HTTP状态码&url=https://frank-ho.github.io/2018/06/19/HTTP状态码/index.html&pic=https://frank-ho.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=HTTP状态码&url=https://frank-ho.github.io/2018/06/19/HTTP状态码/index.html&via=Frank-HO" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://frank-ho.github.io/2018/06/19/HTTP状态码/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://frank-ho.github.io/2018/06/19/HTTP状态码/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81" target="_blank" rel="noopener">HTTP状态码</a><br><strong>HTTP状态码</strong>（英语：HTTP Status Code）是用以表示<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E9%A0%81%E4%BC%BA%E6%9C%8D%E5%99%A8" target="_blank" rel="noopener">网页服务器</a><a href="https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE" target="_blank" rel="noopener">超文本传输协议</a>响应状态的3位数字代码。它由 <a href="https://tools.ietf.org/html/rfc2616" target="_blank" rel="noopener">RFC 2616</a> 规范定义的，并得到 <a href="https://tools.ietf.org/html/rfc2518" target="_blank" rel="noopener">RFC 2518</a>、<a href="https://tools.ietf.org/html/rfc2817" target="_blank" rel="noopener">RFC 2817</a>、<a href="https://tools.ietf.org/html/rfc2295" target="_blank" rel="noopener">RFC 2295</a>、<a href="https://tools.ietf.org/html/rfc2774" target="_blank" rel="noopener">RFC 2774</a> 与 <a href="https://tools.ietf.org/html/rfc4918" target="_blank" rel="noopener">RFC 4918</a> 等规范扩展。所有状态码的第一个数字代表了响应的五种状态之一。所示的消息短语是典型的，但是可以提供任何可读取的替代方案。 除非另有说明，状态码是HTTP / 1.1标准（<a href="https://tools.ietf.org/html/rfc7231" target="_blank" rel="noopener">RFC 7231</a>）的一部分。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1342270-300c0ac92324e1ae.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="statuscode.jpg"></p>
+<h2 id="1xx消息"><a href="#1xx消息" class="headerlink" title="1xx消息"></a>1xx消息</h2><blockquote>
+<p>这一类型的状态码，代表请求已被接受，需要继续处理。这类响应是临时响应，只包含状态行和某些可选的响应头信息，并以空行结束。由于HTTP/1.0协议中没有定义任何1xx状态码，所以除非在某些试验条件下，服务器禁止向此类客户端发送1xx响应。这些状态码代表的响应都是信息性的，标示客户应该采取的其他行动。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>对应消息</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>Continue</td>
+<td>服务器已经接收到请求头，并且客户端应继续发送请求主体（在需要发送身体的请求的情况下：例如，POST请求），或者如果请求已经完成，忽略这个响应。服务器必须在请求完成后向客户端发送一个最终响应。要使服务器检查请求的头部，客户端必须在其初始请求中发送Expect: 100-continue作为头部，并在发送正文之前接收100 Continue状态代码。响应代码417期望失败表示请求不应继续。</td>
+</tr>
+<tr>
+<td>101</td>
+<td>Switching Protocols</td>
+<td>服务器已经理解了客户端的请求，并将通过Upgrade消息头通知客户端采用不同的协议来完成这个请求。在发送完这个响应最后的空行后，服务器将会切换到在Upgrade消息头中定义的那些协议。<br>只有在切换新的协议更有好处的时候才应该采取类似措施。例如，切换到新的HTTP版本（如<a href="https://zh.wikipedia.org/wiki/HTTP/2" target="_blank" rel="noopener">HTTP/2</a>）比旧版本更有优势，或者切换到一个实时且同步的协议（如<a href="https://zh.wikipedia.org/wiki/WebSocket" target="_blank" rel="noopener">WebSocket</a>）以传送利用此类特性的资源。</td>
+</tr>
+<tr>
+<td>102</td>
+<td>Processing（<a href="https://zh.wikipedia.org/wiki/WebDAV" target="_blank" rel="noopener">WebDAV</a>；<a href="https://tools.ietf.org/html/rfc2518" target="_blank" rel="noopener">RFC 2518</a>）</td>
+<td>WebDAV请求可能包含许多涉及文件操作的子请求，需要很长时间才能完成请求。该代码表示​​服务器已经收到并正在处理请求，但无响应可用。这样可以防止客户端超时，并假设请求丢失。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2xx成功"><a href="#2xx成功" class="headerlink" title="2xx成功"></a>2xx成功</h2><blockquote>
+<p>这一类型的状态码，代表请求已成功被服务器接收、理解、并接受。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>对应消息</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>OK</td>
+<td>请求已成功，请求所希望的响应头或数据体将随此响应返回。实际的响应将取决于所使用的请求方法。在GET请求中，响应将包含与请求的资源相对应的实体。在POST请求中，响应将包含描述或操作结果的实体。</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Created</td>
+<td>请求已经被实现，而且有一个新的资源已经依据请求的需要而创建，且其<a href="https://zh.wikipedia.org/wiki/URI" target="_blank" rel="noopener">URI</a>已经随Location头信息返回。假如需要的资源无法及时创建的话，应当返回’<a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#202" target="_blank" rel="noopener">202 Accepted</a>‘。</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Accepted</td>
+<td>服务器已接受请求，但尚未处理。最终该请求可能会也可能不会被执行，并且可能在处理发生时被禁止。</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Non-Authoritative Information（自HTTP / 1.1起）</td>
+<td>服务器是一个转换代理服务器（transforming proxy，例如<a href="https://zh.wikipedia.org/wiki/%E7%B6%B2%E7%B5%A1%E5%8A%A0%E9%80%9F%E5%99%A8" target="_blank" rel="noopener">网络加速器</a>），以200 OK 状态码为起源，但回应了原始响应的修改版本。</td>
+</tr>
+<tr>
+<td>204</td>
+<td>No Content</td>
+<td>服务器成功处理了请求，没有返回任何内容。</td>
+</tr>
+<tr>
+<td>205</td>
+<td>Reset Content</td>
+<td>服务器成功处理了请求，但没有返回任何内容。与204响应不同，此响应要求请求者重置文档视图。</td>
+</tr>
+<tr>
+<td>206</td>
+<td>Partial Content（<a href="https://tools.ietf.org/html/rfc7233" target="_blank" rel="noopener">RFC 7233</a>）</td>
+<td>服务器已经成功处理了部分GET请求。类似于<a href="https://zh.wikipedia.org/wiki/FlashGet" target="_blank" rel="noopener">FlashGet</a>或者<a href="https://zh.wikipedia.org/wiki/%E8%BF%85%E9%9B%B7" target="_blank" rel="noopener">迅雷</a>这类的HTTP <a href="https://zh.wikipedia.org/wiki/Category:%E4%B8%8B%E8%BC%89%E5%B7%A5%E5%85%B7" target="_blank" rel="noopener">下载工具</a>都是使用此类响应实现断点续传或者将一个大文档分解为多个下载段同时下载。</td>
+</tr>
+<tr>
+<td>207</td>
+<td>Multi-Status（WebDAV；<a href="https://tools.ietf.org/html/rfc4918" target="_blank" rel="noopener">RFC 4918</a>）</td>
+<td>代表之后的消息体将是一个<a href="https://zh.wikipedia.org/wiki/XML" target="_blank" rel="noopener">XML</a>消息，并且可能依照之前子请求数量的不同，包含一系列独立的响应代码。</td>
+</tr>
+<tr>
+<td>208</td>
+<td>Already Reported （WebDAV；<a href="https://tools.ietf.org/html/rfc5842" target="_blank" rel="noopener">RFC 5842</a>）</td>
+<td>DAV绑定的成员已经在（多状态）响应之前的部分被列举，且未被再次包含。</td>
+</tr>
+<tr>
+<td>226</td>
+<td>IM Used （<a href="https://tools.ietf.org/html/rfc3229" target="_blank" rel="noopener">RFC 3229</a>）</td>
+<td>服务器已经满足了对资源的请求，对实体请求的一个或多个实体操作的结果表示。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3xx重定向"><a href="#3xx重定向" class="headerlink" title="3xx重定向"></a>3xx重定向</h2><blockquote>
+<p>这类状态码代表需要客户端采取进一步的操作才能完成请求。通常，这些状态码用来重定向，后续的请求地址（重定向目标）在本次响应的Location域中指明。<br>当且仅当后续的请求所使用的方法是GET或者HEAD时，用户<a href="https://zh.wikipedia.org/wiki/%E6%B5%8F%E8%A7%88%E5%99%A8" target="_blank" rel="noopener">浏览器</a>才可以在没有用户介入的情况下自动提交所需要的后续请求。客户端应当自动监测<a href="https://zh.wikipedia.org/wiki/%E6%AD%BB%E5%BE%AA%E7%92%B0" target="_blank" rel="noopener">无限循环</a>重定向（例如：A→B→C→……→A或A→A），因为这会导致服务器和客户端大量不必要的资源消耗。按照HTTP/1.0版规范的建议，浏览器不应自动访问超过5次的重定向。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>对应消息</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>300</td>
+<td>Multiple Choices</td>
+<td>被请求的资源有一系列可供选择的回馈信息，每个都有自己特定的地址和浏览器驱动的商议信息。用户或浏览器能够自行选择一个首选的地址进行重定向。<br>除非这是一个HEAD请求，否则该响应应当包括一个资源特性及地址的列表的实体，以便用户或浏览器从中选择最合适的重定向地址。这个实体的格式由Content-Type定义的格式所决定。浏览器可能根据响应的格式以及浏览器自身能力，自动作出最合适的选择。当然，RFC 2616规范并没有规定这样的自动选择该如何进行。<br>如果服务器本身已经有了首选的回馈选择，那么在Location中应当指明这个回馈的<a href="https://zh.wikipedia.org/wiki/URI" target="_blank" rel="noopener">URI</a>；浏览器可能会将这个Location值作为自动重定向的地址。此外，除非额外指定，否则这个响应也是可缓存的。</td>
+</tr>
+<tr>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_301" target="_blank" rel="noopener">301</a></td>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_301" target="_blank" rel="noopener">Moved Permanently</a></td>
+<td>被请求的资源已永久移动到新位置，并且将来任何对此资源的引用都应该使用本响应返回的若干个URI之一。如果可能，拥有链接编辑功能的客户端应当自动把请求的地址修改为从服务器反馈回来的地址。除非额外指定，否则这个响应也是可缓存的。<br>新的永久性的URI应当在响应的Location域中返回。除非这是一个HEAD请求，否则响应的实体中应当包含指向新的URI的<a href="https://zh.wikipedia.org/wiki/%E8%B6%85%E9%93%BE%E6%8E%A5" target="_blank" rel="noopener">超链接</a>及简短说明。<br>如果这不是一个GET或者HEAD请求，因此浏览器禁止自动进行重定向，除非得到用户的确认，因为请求的条件可能因此发生变化。<br>注意：对于某些使用HTTP/1.0协议的浏览器，当它们发送的POST请求得到了一个301响应的话，接下来的重定向请求将会变成GET方式。</td>
+</tr>
+<tr>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_302" target="_blank" rel="noopener">302</a></td>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_302" target="_blank" rel="noopener">Found</a></td>
+<td>要求客户端执行临时重定向（原始描述短语为“Moved Temporarily”）。由于这样的重定向是临时的，客户端应当继续向原有地址发送以后的请求。只有在Cache-Control或Expires中进行了指定的情况下，这个响应才是可缓存的。<br>新的临时性的URI应当在响应的Location域中返回。除非这是一个HEAD请求，否则响应的实体中应当包含指向新的URI的超链接及简短说明。<br>如果这不是一个GET或者HEAD请求，那么浏览器禁止自动进行重定向，除非得到用户的确认，因为请求的条件可能因此发生变化。<br>注意：虽然RFC 1945和RFC 2068规范不允许客户端在重定向时改变请求的方法，但是很多现存的浏览器将302响应视作为303响应，并且使用GET方式访问在Location中规定的URI，而无视原先请求的方法。因此状态码303和307被添加了进来，用以明确服务器期待客户端进行何种反应。</td>
+</tr>
+<tr>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_303" target="_blank" rel="noopener">303</a></td>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_303" target="_blank" rel="noopener">See Other</a></td>
+<td>对应当前请求的响应可以在另一个URI上被找到，当响应于POST（或PUT / DELETE）接收到响应时，客户端应该假定服务器已经收到数据，并且应该使用单独的GET消息发出重定向。这个方法的存在主要是为了允许由脚本激活的POST请求输出重定向到一个新的资源。这个新的URI不是原始资源的替代引用。同时，303响应禁止被缓存。当然，第二个请求（重定向）可能被缓存。<br>新的URI应当在响应的Location域中返回。除非这是一个HEAD请求，否则响应的实体中应当包含指向新的URI的超链接及简短说明。<br>注意：许多HTTP/1.1版以前的浏览器不能正确理解303状态。如果需要考虑与这些浏览器之间的互动，302状态码应该可以胜任，因为大多数的浏览器处理302响应时的方式恰恰就是上述规范要求客户端处理303响应时应当做的。</td>
+</tr>
+<tr>
+<td>304</td>
+<td>Not Modified</td>
+<td>表示资源未被修改，因为请求头指定的版本If-Modified-Since或If-None-Match。在这种情况下，由于客户端仍然具有以前下载的副本，因此不需要重新传输资源。</td>
+</tr>
+<tr>
+<td>305</td>
+<td>Use Proxy</td>
+<td>被请求的资源必须通过指定的代理才能被访问。Location域中将给出指定的代理所在的URI信息，接收者需要重复发送一个单独的请求，通过这个代理才能访问相应资源。只有原始服务器才能创建305响应。许多HTTP客户端（像是Mozilla和Internet Explorer）都没有正确处理这种状态代码的响应，主要是出于安全考虑。<br>注意：RFC 2068中没有明确305响应是为了重定向一个单独的请求，而且只能被原始服务器建立。忽视这些限制可能导致严重的安全后果。</td>
+</tr>
+<tr>
+<td>306</td>
+<td>Switch Proxy</td>
+<td>在最新版的规范中，306状态码已经不再被使用。最初是指“后续请求应使用指定的代理”。</td>
+</tr>
+<tr>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_307" target="_blank" rel="noopener">307</a></td>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_307" target="_blank" rel="noopener">Temporary Redirect</a></td>
+<td>在这种情况下，请求应该与另一个URI重复，但后续的请求应仍使用原始的URI。 与302相反，当重新发出原始请求时，不允许更改请求方法。 例如，应该使用另一个POST请求来重复POST请求。</td>
+</tr>
+<tr>
+<td>308</td>
+<td>Permanent Redirect (<a href="https://tools.ietf.org/html/rfc7538" target="_blank" rel="noopener">RFC 7538</a>)</td>
+<td>请求和所有将来的请求应该使用另一个URI重复。 307和308重复302和301的行为，但不允许HTTP方法更改。 例如，将表单提交给永久重定向的资源可能会顺利进行。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4xx客户端错误"><a href="#4xx客户端错误" class="headerlink" title="4xx客户端错误"></a>4xx客户端错误</h2><blockquote>
+<p>这类的状态码代表了客户端看起来可能发生了错误，妨碍了服务器的处理。除非响应的是一个HEAD请求，否则服务器就应该返回一个解释当前错误状况的实体，以及这是临时的还是永久性的状况。这些状态码适用于任何请求方法。浏览器应当向用户显示任何包含在此类错误响应中的实体内容。如果错误发生时客户端正在传送数据，那么使用TCP的服务器实现应当仔细确保在关闭客户端与服务器之间的连接之前，客户端已经收到了包含错误信息的数据包。如果客户端在收到错误信息后继续向服务器发送数据，服务器的TCP栈将向客户端发送一个重置数据包，以清除该客户端所有还未识别的输入缓冲，以免这些数据被服务器上的应用程序读取并干扰后者。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>对应消息</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>Bad Request</td>
+<td>由于明显的客户端错误（例如，格式错误的请求语法，太大的大小，无效的请求消息或欺骗性路由请求），服务器不能或不会处理该请求。</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized（<a href="https://tools.ietf.org/html/rfc7235" target="_blank" rel="noopener">RFC 7235</a>）</td>
+<td>类似于403 Forbidden，401语义即“未认证”，即用户没有必要的凭据。该状态码表示当前请求需要用户验证。该响应必须包含一个适用于被请求资源的WWW-Authenticate信息头用以询问用户信息。客户端可以重复提交一个包含恰当的Authorization头信息的请求。如果当前请求已经包含了Authorization证书，那么401响应代表着服务器验证已经拒绝了那些证书。如果401响应包含了与前一个响应相同的身份验证询问，且浏览器已经至少尝试了一次验证，那么浏览器应当向用户展示响应中包含的实体信息，因为这个实体信息中可能包含了相关诊断信息。<br>注意：当网站（通常是网站域名）禁止IP地址时，有些网站状态码显示的401，表示该特定地址被拒绝访问网站。</td>
+</tr>
+<tr>
+<td>402</td>
+<td>Payment Required</td>
+<td>该状态码是为了将来可能的需求而预留的。该状态码最初的意图可能被用作某种形式的数字现金或在线支付方案的一部分，但几乎没有哪家服务商使用，而且这个状态码通常不被使用。如果特定开发人员已超过请求的每日限制，<a href="https://zh.wikipedia.org/wiki/Google_Developers" title="Google Developers" target="_blank" rel="noopener">Google Developers</a>API会使用此状态码。</td>
+</tr>
+<tr>
+<td>403</td>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_403" target="_blank" rel="noopener">Forbidden</a></td>
+<td>服务器已经理解请求，但是拒绝执行它。与<a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#401" target="_blank" rel="noopener">401响应</a>不同的是，身份验证并不能提供任何帮助，而且这个请求也不应该被重复提交。如果这不是一个HEAD请求，而且服务器希望能够讲清楚为何请求不能被执行，那么就应该在实体内描述拒绝的原因。当然服务器也可以返回一个<a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#404" target="_blank" rel="noopener">404响应</a>，假如它不希望让客户端获得任何信息。</td>
+</tr>
+<tr>
+<td>404</td>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_404" target="_blank" rel="noopener">Not Found</a></td>
+<td>请求失败，请求所希望得到的资源未被在服务器上发现，但允许用户的后续请求。没有信息能够告诉用户这个状况到底是暂时的还是永久的。假如服务器知道情况的话，应当使用<a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#410" target="_blank" rel="noopener">410状态码</a>来告知旧资源因为某些内部的配置机制问题，已经永久的不可用，而且没有任何可以跳转的地址。404这个状态码被广泛应用于当服务器不想揭示到底为何请求被拒绝或者没有其他适合的响应可用的情况下。</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed</td>
+<td>请求行中指定的请求方法不能被用于请求相应的资源。该响应必须返回一个Allow头信息用以表示出当前资源能够接受的请求方法的列表。例如，需要通过POST呈现数据的表单上的GET请求，或只读资源上的PUT请求。鉴于PUT，DELETE方法会对服务器上的资源进行写操作，因而绝大部分的网页服务器都不支持或者在默认配置下不允许上述请求方法，对于此类请求均会返回405错误。</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable</td>
+<td>请求的资源的内容特性无法满足请求头中的条件，因而无法生成响应实体，该请求不可接受。除非这是一个HEAD请求，否则该响应就应当返回一个包含可以让用户或者浏览器从中选择最合适的实体特性以及地址列表的实体。实体的格式由Content-Type头中定义的媒体类型决定。浏览器可以根据格式及自身能力自行作出最佳选择。但是，规范中并没有定义任何作出此类自动选择的标准。</td>
+</tr>
+<tr>
+<td>407</td>
+<td>Proxy Authentication Required（<a href="https://tools.ietf.org/html/rfc2617" target="_blank" rel="noopener">RFC 2617</a>）</td>
+<td>与401响应类似，只不过客户端必须在代理服务器上进行身份验证。代理服务器必须返回一个Proxy-Authenticate用以进行身份询问。客户端可以返回一个Proxy-Authorization信息头用以验证。</td>
+</tr>
+<tr>
+<td>408</td>
+<td>Request Timeout</td>
+<td>请求超时。根据HTTP规范，客户端没有在服务器预备等待的时间内完成一个请求的发送，客户端可以随时再次提交这一请求而无需进行任何更改。</td>
+</tr>
+<tr>
+<td>409</td>
+<td>Conflict</td>
+<td>表示因为请求存在冲突无法处理该请求，例如多个同步更新之间的<a href="https://zh.wikipedia.org/w/index.php?title=%E7%BC%96%E8%BE%91%E5%86%B2%E7%AA%81&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">编辑冲突</a>。</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone</td>
+<td>表示所请求的资源不再可用，将不再可用。当资源被有意地删除并且资源应被清除时，应该使用这个。在收到410状态码后，用户应停止再次请求资源。但大多数服务端不会使用此状态码，而是直接使用<a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#404" target="_blank" rel="noopener">404状态码</a>。</td>
+</tr>
+<tr>
+<td>411</td>
+<td>Length Required</td>
+<td>服务器拒绝在没有定义Content-Length头的情况下接受请求。在添加了表明请求消息体长度的有效Content-Length头之后，客户端可以再次提交该请求。</td>
+</tr>
+<tr>
+<td>412</td>
+<td>Precondition Failed（<a href="https://tools.ietf.org/html/rfc7232" target="_blank" rel="noopener">RFC 7232</a>）</td>
+<td>服务器在验证在请求的头字段中给出先决条件时，没能满足其中的一个或多个。这个状态码允许客户端在获取资源时在请求的元信息（请求头字段数据）中设置先决条件，以此避免该请求方法被应用到其希望的内容以外的资源上。</td>
+</tr>
+<tr>
+<td>413</td>
+<td>Request Entity Too Large（<a href="https://tools.ietf.org/html/rfc7231" target="_blank" rel="noopener">RFC 7231</a>）</td>
+<td>前称“Request Entity Too Large”，表示服务器拒绝处理当前请求，因为该请求提交的实体数据大小超过了服务器愿意或者能够处理的范围。此种情况下，服务器可以关闭连接以免客户端继续发送此请求。如果这个状况是临时的，服务器应当返回一个Retry-After的响应头，以告知客户端可以在多少时间以后重新尝试。</td>
+</tr>
+<tr>
+<td>414</td>
+<td>Request-URI Too Long（<a href="https://tools.ietf.org/html/rfc7231" target="_blank" rel="noopener">RFC 7231</a>）</td>
+<td>前称“Request-URI Too Long”，表示请求的URI长度超过了服务器能够解释的长度，因此服务器拒绝对该请求提供服务。通常将太多数据的结果编码为GET请求的查询字符串，在这种情况下，应将其转换为POST请求。这比较少见，通常的情况包括：<br>&gt; 本应使用POST方法的表单提交变成了GET方法，导致查询字符串过长。<br>&gt; 重定向URI“黑洞”，例如每次重定向把旧的URI作为新的URI的一部分，导致在若干次重定向后URI超长。<br>&gt; 客户端正在尝试利用某些服务器中存在的安全漏洞攻击服务器。这类服务器使用固定长度的缓冲读取或操作请求的URI，当GET后的参数超过某个数值后，可能会产生缓冲区溢出，导致任意代码被执行。没有此类漏洞的服务器，应当返回414状态码。</td>
+</tr>
+<tr>
+<td>415</td>
+<td>Unsupported Media Type</td>
+<td>对于当前请求的方法和所请求的资源，请求中提交的<a href="https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E5%AA%92%E4%BD%93%E7%B1%BB%E5%9E%8B" title="互联网媒体类型" target="_blank" rel="noopener">互联网媒体类型</a>并不是服务器中所支持的格式，因此请求被拒绝。例如，客户端将图像上传格式为svg，但服务器要求图像使用上传格式为jpg。</td>
+</tr>
+<tr>
+<td>416</td>
+<td>Requested Range Not Satisfiable（<a href="https://tools.ietf.org/html/rfc7233" target="_blank" rel="noopener">RFC 7233</a>）</td>
+<td>前称“Requested Range Not Satisfiable”。客户端已经要求文件的一部分（<a href="https://zh.wikipedia.org/w/index.php?title=Byte_serving&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">Byte serving</a>），但服务器不能提供该部分。例如，如果客户端要求文件的一部分超出文件尾端。</td>
+</tr>
+<tr>
+<td>417</td>
+<td>Expectation Failed</td>
+<td>在请求头Expect中指定的预期内容无法被服务器满足，或者这个服务器是一个代理服显的证据证明在当前<a href="https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1" title="路由" target="_blank" rel="noopener">路由</a>的下一个节点上，Expect的内容无法被满足。</td>
+</tr>
+<tr>
+<td>418</td>
+<td>I’m a teapot（<a href="https://tools.ietf.org/html/rfc2324" target="_blank" rel="noopener">RFC 2324</a>）</td>
+<td>本操作码是在1998年作为<a href="https://zh.wikipedia.org/wiki/IETF" title="IETF" target="_blank" rel="noopener">IETF</a>的传统<a href="https://zh.wikipedia.org/wiki/%E6%83%A1%E6%90%9ERFC" title="恶搞RFC" target="_blank" rel="noopener">愚人节笑话</a>, 在RFC 2324<a href="https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E5%92%96%E5%95%A1%E5%A3%B6%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE" title="超文本咖啡壶控制协议" target="_blank" rel="noopener">超文本咖啡壶控制协议</a>‘中定义的，并不需要在真实的HTTP服务器中定义。当一个控制茶壶的<a href="https://zh.wikipedia.org/wiki/HTCPCP" title="HTCPCP" target="_blank" rel="noopener">HTCPCP</a>收到BREW或POST指令要求其煮咖啡时应当回传此错误。这个HTTP状态码在某些网站（包括Google.com）与项目（如<a href="https://zh.wikipedia.org/wiki/Node.js" title="Node.js" target="_blank" rel="noopener">Node.js</a>、<a href="https://zh.wikipedia.org/wiki/ASP.NET" title="ASP.NET" target="_blank" rel="noopener">ASP.NET</a>和<a href="https://zh.wikipedia.org/wiki/Go%E8%AF%AD%E8%A8%80" title="Go语言" target="_blank" rel="noopener">Go语言</a>）中用作<a href="https://zh.wikipedia.org/wiki/%E5%BD%A9%E8%9B%8B_(%E5%AA%92%E4%BD%93" target="_blank" rel="noopener">彩蛋</a> “彩蛋 (媒体)”)。</td>
+</tr>
+<tr>
+<td>420</td>
+<td>Enhance Your Caim</td>
+<td>Twitter Search与Trends API在客户端被限速的情况下返回。</td>
+</tr>
+<tr>
+<td>421</td>
+<td>Misdirected Request （<a href="https://tools.ietf.org/html/rfc7540" target="_blank" rel="noopener">RFC 7540</a>）</td>
+<td>该请求针对的是无法产生响应的服务器（例如因为连接重用）。</td>
+</tr>
+<tr>
+<td>422</td>
+<td>Unprocessable Entity（<a href="https://zh.wikipedia.org/wiki/WebDAV" title="WebDAV" target="_blank" rel="noopener">WebDAV</a>；<a href="https://tools.ietf.org/html/rfc4918" target="_blank" rel="noopener">RFC 4918</a> ）</td>
+<td>请求格式正确，但是由于含有<a href="https://zh.wikipedia.org/wiki/%E8%AF%AD%E4%B9%89" title="语义" target="_blank" rel="noopener">语义</a>错误，无法响应。</td>
+</tr>
+<tr>
+<td>423</td>
+<td>Locked（<a href="https://zh.wikipedia.org/wiki/WebDAV" title="WebDAV" target="_blank" rel="noopener">WebDAV</a>；<a href="https://tools.ietf.org/html/rfc4918" target="_blank" rel="noopener">RFC 4918</a>）</td>
+<td>当前资源被锁定.</td>
+</tr>
+<tr>
+<td>424</td>
+<td>Failed Dependency（<a href="https://zh.wikipedia.org/wiki/WebDAV" title="WebDAV" target="_blank" rel="noopener">WebDAV</a>；<a href="https://tools.ietf.org/html/rfc4918" target="_blank" rel="noopener">RFC 4918</a>）</td>
+<td>由于之前的某个请求发生的错误，导致当前请求失败，例如PROPPATCH。</td>
+</tr>
+<tr>
+<td>425</td>
+<td>Unodered Cellection</td>
+<td>在WebDAV Advanced Collections Protocol中定义，但Web Distributed Authoring and Versioning (WebDAV) Ordered Collections Protocol中并不存在。</td>
+</tr>
+<tr>
+<td>426</td>
+<td>Upgrade Required（<a href="https://tools.ietf.org/html/rfc2817" target="_blank" rel="noopener">RFC 2817</a>）</td>
+<td>客户端应当切换到<a href="https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8" title="传输层安全" target="_blank" rel="noopener">TLS/1.0</a>，并在<a href="https://zh.wikipedia.org/w/index.php?title=HTTP/1.1_Upgrade_header&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">HTTP/1.1 Upgrade header</a>中给出。</td>
+</tr>
+<tr>
+<td>428</td>
+<td>Precondition Required (<a href="https://tools.ietf.org/html/rfc6585" target="_blank" rel="noopener">RFC 6585</a>)</td>
+<td>原服务器要求该请求满足一定条件。这是为了防止“‘未更新’问题，即客户端读取（GET）一个资源的状态，更改它，并将它写（PUT）回服务器，但这期间第三方已经在服务器上更改了该资源的状态，因此导致了冲突。</td>
+</tr>
+<tr>
+<td>429</td>
+<td>oo Many Requests （<a href="https://tools.ietf.org/html/rfc6585" target="_blank" rel="noopener">RFC 6585</a>）</td>
+<td>用户在给定的时间内发送了太多的请求。旨在用于<a href="https://zh.wikipedia.org/w/index.php?title=%E7%BD%91%E7%BB%9C%E9%99%90%E9%80%9F&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">网络限速</a>。</td>
+</tr>
+<tr>
+<td>431</td>
+<td>Request Header Fields Too Large （<a href="https://tools.ietf.org/html/rfc6585" target="_blank" rel="noopener">RFC 6585</a>）</td>
+<td>服务器不愿处理请求，因为一个或多个头字段过大。</td>
+</tr>
+<tr>
+<td>444</td>
+<td>No Response</td>
+<td>Nginx上HTTP服务器扩展。服务器不向客户端返回任何信息，并关闭连接（有助于阻止恶意软件）。</td>
+</tr>
+<tr>
+<td>450</td>
+<td>Blocked by Windows Parental Controls</td>
+<td>这是一个由Windows家庭控制（Microsoft）HTTP阻止的450状态代码的示例，用于信息和测试。</td>
+</tr>
+<tr>
+<td>452</td>
+<td><a href="https://zh.wikipedia.org/wiki/HTTP_451" target="_blank" rel="noopener">Unavailable For Legal Reasons</a></td>
+<td>该访问因<a href="https://zh.wikipedia.org/wiki/%E6%B3%95%E5%BE%8B" title="法律" target="_blank" rel="noopener">法律</a>的要求而被拒绝，由<a href="https://zh.wikipedia.org/wiki/IETF" title="IETF" target="_blank" rel="noopener">IETF</a>在2015核准后新增加。</td>
+</tr>
+<tr>
+<td>494</td>
+<td>Request Header Too Large</td>
+<td>在错误代码431提出之前Nginx上使用的扩展HTTP代码。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5xx服务器错误"><a href="#5xx服务器错误" class="headerlink" title="5xx服务器错误"></a>5xx服务器错误</h2><blockquote>
+<p>表示服务器无法完成明显有效的请求。这类状态码代表了服务器在处理请求的过程中有错误或者异常状态发生，也有可能是服务器意识到以当前的软硬件资源无法完成对请求的处理。除非这是一个HEAD请求，否则服务器应当包含一个解释当前错误状态以及这个状况是临时的还是永久的解释信息实体。浏览器应当向用户展示任何在当前响应中被包含的实体。这些状态码适用于任何响应方法。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>对应消息</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>500</td>
+<td>Internal Server Error</td>
+<td>通用错误消息，服务器遇到了一个未曾预料的状况，导致了它无法完成对请求的处理。没有给出具体错误信息。</td>
+</tr>
+<tr>
+<td>501</td>
+<td>Not Implemented</td>
+<td>服务器不支持当前请求所需要的某个功能。当服务器无法识别请求的方法，并且无法支持其对任何资源的请求。（例如，网络服务API的新功能）</td>
+</tr>
+<tr>
+<td>502</td>
+<td>Bad Gateway</td>
+<td>作为<a href="https://zh.wikipedia.org/wiki/%E7%BD%91%E5%85%B3" title="网关" target="_blank" rel="noopener">网关</a>或者<a href="https://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8" title="代理服务器" target="_blank" rel="noopener">代理</a>工作的服务器尝试执行请求时，从上游服务器接收到无效的响应。</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable</td>
+<td>由于临时的服务器维护或者<a href="https://zh.wikipedia.org/w/index.php?title=%E8%BF%87%E8%BD%BD&amp;action=edit&amp;redlink=1" title="过载（页面不存在）" target="_blank" rel="noopener">过载</a>，服务器当前无法处理请求。这个状况是暂时的，并且将在一段时间以后恢复。如果能够预计延迟时间，那么响应中可以包含一个Retry-After头用以标明这个延迟时间。如果没有给出这个Retry-After信息，那么客户端应当以处理<a href="https://zh.wikipedia.org/w/index.php?title=500_Internal_Error&amp;action=edit&amp;redlink=1" title="500 Internal Error（页面不存在）" target="_blank" rel="noopener">500响应</a>的方式处理它。</td>
+</tr>
+<tr>
+<td>504</td>
+<td>Gateway Timeout</td>
+<td>作为网关或者代理工作的服务器尝试执行请求时，未能及时从上游服务器（URI标识出的服务器，例如HTTP、FTP、LDAP）或者辅助服务器（例如DNS）收到响应。注意：某些代理服务器在DNS查询超时时会返回400或者500错误。</td>
+</tr>
+<tr>
+<td>505</td>
+<td>HTTP Version Not Supported</td>
+<td>服务器不支持，或者拒绝支持在请求中使用的HTTP版本。这暗示着服务器不能或不愿使用与客户端相同的版本。响应中应当包含一个描述了为何版本不被支持以及服务器支持哪些协议的实体。</td>
+</tr>
+<tr>
+<td>506</td>
+<td>Variant Also Negotiates（<a href="https://tools.ietf.org/html/rfc2295" target="_blank" rel="noopener">RFC 2295</a>）</td>
+<td>由《透明内容协商协议》（<a href="https://tools.ietf.org/html/rfc2295" target="_blank" rel="noopener">RFC 2295</a>）扩展，代表服务器存在内部配置错误，被请求的协商变元资源被配置为在透明内容协商中使用自己，因此在一个协商处理中不是一个合适的重点。</td>
+</tr>
+<tr>
+<td>507</td>
+<td>Insufficient Storage（<a href="https://zh.wikipedia.org/wiki/WebDAV" title="WebDAV" target="_blank" rel="noopener">WebDAV</a>；<a href="https://tools.ietf.org/html/rfc4918" target="_blank" rel="noopener">RFC 4918</a>）</td>
+<td>服务器无法存储完成请求所必须的内容。这个状况被认为是临时的。</td>
+</tr>
+<tr>
+<td>508</td>
+<td>Loop Detected （<a href="https://zh.wikipedia.org/wiki/WebDAV" title="WebDAV" target="_blank" rel="noopener">WebDAV</a>；<a href="https://tools.ietf.org/html/rfc5842" target="_blank" rel="noopener">RFC 5842</a>）</td>
+<td>服务器在处理请求时陷入死循环。 （可代替 <a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#208" target="_blank" rel="noopener">208状态码</a>）</td>
+</tr>
+<tr>
+<td>510</td>
+<td>Not Extended（<a href="https://tools.ietf.org/html/rfc2774" target="_blank" rel="noopener">RFC 2774</a>）</td>
+<td>获取资源所需要的策略并没有被满足。</td>
+</tr>
+<tr>
+<td>511</td>
+<td>Network Authentication Required （<a href="https://tools.ietf.org/html/rfc6585" target="_blank" rel="noopener">RFC 6585</a>）</td>
+<td>客户端需要进行身份验证才能获得网络访问权限，旨在限制用户群访问特定网络。（例如连接<a href="https://zh.wikipedia.org/wiki/%E7%83%AD%E7%82%B9_(Wi-Fi" target="_blank" rel="noopener">WiFi热点</a> “热点 (Wi-Fi)”)时的<a href="https://zh.wikipedia.org/w/index.php?title=%E5%BC%BA%E5%88%B6%E7%BD%91%E7%BB%9C%E9%97%A8%E6%88%B7&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">强制网络门户</a>）</td>
+</tr>
+</tbody>
+</table>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'https://frank-ho.github.io/2018/06/19/HTTP状态码/', // 可选。默认为 location.href
+        owner: 'FrankHo',
+        repo: 'cursorfei.github.io',
+        oauth: {
+            client_id: '78dbaebd19a04c62d526',
+            client_secret: 'dc8bf602f1f77f4c758e35d19ebc3ff6329aa8ae',
+        },
+    })
+    gitment.render('container')
+</script>
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/06/19/SpringBoot-Scheduled/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/06/19/MySQL的utf8与utf8mb4/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Frank-HO's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        frank92.ho@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">43</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Android开发/">Android开发<span class="sidebar_archives-count">18</span></a></li><li><a class="sidebar_archives-link" href="/categories/JAVA/">JAVA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaWEB/">JavaWEB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Linux/">Linux<span class="sidebar_archives-count">16</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据库/">数据库<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/日常技术/">日常技术<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Frank's space
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('vcadNlPutVSrslWor8Le8Bcq-gzGzoHsz', 'C4ejl7zx9rkwRa2QPzV3Rz32');
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+
+
+   <!-- Gitment -->
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',false);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+<script type="text/ls-javascript" id="Bing-Background-script">
+    queue.offer(function(){
+        $('body').attr('data-original', 'https://api.i-meto.com/bing?[object Object]');
+    });
+</script>
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2015;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

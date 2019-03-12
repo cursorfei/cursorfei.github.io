@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+
+
+    <link rel="dns-prefetch" href="https://imsun.github.io"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.proxy.ustclug.org"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            python-mongodb | 
+        
+        Frank&#39;s space
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="Android,Linux,JavaWEB,python">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.proxy.ustclug.org/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Frank&#39;s space">
+    <meta name="msapplication-starturl" content="https://frank-ho.github.io/2018/06/19/python-mongodb/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Frank&#39;s space">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="google2f9be32c76c43d2c" />
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="/atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://frank-ho.github.io/2018/06/19/python-mongodb/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="python-mongodb | Frank&#39;s space">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="python"> 
+
+    
+        <meta property="article:published_time" content="Tue Jun 19 2018 21:18:31 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 12 2019 14:06:11 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://frank-ho.github.io/2018/06/19/python-mongodb/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://frank-ho.github.io/2018/06/19/python-mongodb/index.html",
+    "headline": "python-mongodb",
+    "datePublished": "Tue Jun 19 2018 21:18:31 GMT+0800",
+    "dateModified": "Tue Mar 12 2019 14:06:11 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Frank-HO",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Welcome to Frank's space"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Frank&#39;s space",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",pythonAndroid,Linux,JavaWEB",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-121092598-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#get-database-connection"><span class="post-toc-number">1.</span> <span class="post-toc-text">get database connection</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#the-same-way"><span class="post-toc-number">2.</span> <span class="post-toc-text">the same way</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#client-MongoClient-“localhost”-27017"><span class="post-toc-number">3.</span> <span class="post-toc-text">client = MongoClient(“localhost”,27017)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#client-MongoClient-“mongodb-localhost-27017-“"><span class="post-toc-number">4.</span> <span class="post-toc-text">client = MongoClient(“mongodb://localhost:27017/“)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#assign-database-and-collection-to-operat"><span class="post-toc-number">5.</span> <span class="post-toc-text">assign database and collection to operat</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#IDUS"><span class="post-toc-number">6.</span> <span class="post-toc-text">IDUS</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#insert"><span class="post-toc-number">7.</span> <span class="post-toc-text">insert</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#insert-many-param-must-be-list"><span class="post-toc-number">8.</span> <span class="post-toc-text">insert_many param must be list</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#find"><span class="post-toc-number">9.</span> <span class="post-toc-text">find</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#find-one-just-show-meet-the-conditions-first-collection"><span class="post-toc-number">10.</span> <span class="post-toc-text">find_one() just show meet the conditions first collection</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#find-return-all-the-object-array-which-meet-the-conditions"><span class="post-toc-number">11.</span> <span class="post-toc-text">find() return all the object array which meet the conditions</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#use-for-in-operation-to-loop-all"><span class="post-toc-number">12.</span> <span class="post-toc-text">use for-in operation to loop all</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#search-assign-conditions"><span class="post-toc-number">13.</span> <span class="post-toc-text">search assign conditions</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#use-count"><span class="post-toc-number">14.</span> <span class="post-toc-text">use .count()</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#条件查询-lt-lt-gt-gt-lte-lt-gte-gt-ne"><span class="post-toc-number">15.</span> <span class="post-toc-text">条件查询 $lt(&lt;) $gt(&gt;) $lte(&lt;=) $gte(&gt;=) #ne(!=)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#sort-the-find-result"><span class="post-toc-number">16.</span> <span class="post-toc-text">sort the find result</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#查询-database中所有collection"><span class="post-toc-number">17.</span> <span class="post-toc-text">查询 database中所有collection</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#update"><span class="post-toc-number">18.</span> <span class="post-toc-text">update</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#如果此时temp-“-id”-在该collection中已经存在，则-save-为更新操作，与-replace-one-作用相同，否则-save-为插入操作，与-insert-one-作用相同。"><span class="post-toc-number">19.</span> <span class="post-toc-text">如果此时temp[“_id”]在该collection中已经存在，则.save()为更新操作，与 .replace_one() 作用相同，否则 .save() 为插入操作，与 .insert_one() 作用相同。</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#还要注意的一点是，-replace-one-需要传入两个参数，分别为当前document和要更新为的-document-，与-update-相同"><span class="post-toc-number">20.</span> <span class="post-toc-text">还要注意的一点是，.replace_one()需要传入两个参数，分别为当前document和要更新为的 document ，与 .update() 相同</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#collection-replace-one-old-document-new-document"><span class="post-toc-number">21.</span> <span class="post-toc-text">collection.replace_one(old_document, new_document)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#delete"><span class="post-toc-number">22.</span> <span class="post-toc-text">delete</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#JSON序列化与反序列化"><span class="post-toc-number">23.</span> <span class="post-toc-text">JSON序列化与反序列化</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#如果想序列化为标准-JSON-格式，两种方式，方式一，json-包中的-dumps："><span class="post-toc-number">24.</span> <span class="post-toc-text">如果想序列化为标准 JSON 格式，两种方式，方式一，json 包中的 dumps：</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#bson-json-util包中封装的-dumps："><span class="post-toc-number">25.</span> <span class="post-toc-text">bson.json_util包中封装的 dumps：</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#‘-“foo”-1-2-“bar”-“hello”-”world”-“code”-“-code”-“function-x-return-1-”-“-scope”-“bin”-“-binary”-“”-“-type”-“00”-’"><span class="post-toc-number">26.</span> <span class="post-toc-text">‘[{“foo”: [1, 2]}, {“bar”: {“hello”:”world”}}, {“code”: {“$code”: “function x(){ return 1; }”, “$scope”: {}}}, {“bin”:{“$binary”: “”, “$type”: “00”}}]’</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#对应的反序列化方法为bson-json-util-loads"><span class="post-toc-number">27.</span> <span class="post-toc-text">对应的反序列化方法为bson.json_util.loads()</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                python-mongodb
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Frank-HO</strong>
+        <span>6月 19, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC2klEQVR42u3aUVLjQAwFwNz/0uwBXDFPUmDNqP3lIokzPVQhpDevr5XXCxsbGxsbGxsbG/uR7Fd8vfvU9efX+/tXr/fXz35gzdjY2NhHs7/50//mPdcvmNzfw+ZrxsbGxt7AfvdlyXvyAnZfbJJiVl0zNjY2Nvb9UvINmlCxsbGxsT/Lvt+CHmkykMLGxsbGzgc082JTLUiPmKVhY2NjP549aRv+1/2v5tvY2NjYD2ZXr15UUH3y5Dlvn4+NjY19KDsvDNG/+8UYeB4hJOvExsbGPpv9E2WpuqB8Q/NNx8bGxt7G7gW9o2F9q5jlgURhqISNjY39x9nVZiNfaLIpecNT3W5sbGzsPexPlZOkgUkKYbKJvQETNjY29tnsXjnJeb2DONWNa+bb2NjY2Aexk+F+b1PyUX51KwvPwcbGxl7A7gW01aZi3sYkv4BR3cbGxsb+g+x8cJO3B0lpqUYCeTODjY2NvYedR7z5qCh/Qu++2t5gY2Njb2PnTUI+nJoMkiavYmNjY+9h9wpSbyCVxA8TXhQPYGNjYy9g95qQ3rHIScxceDI2Njb2GnY+vp+MfiaRbVKusLGxsXeyJ0FvUq7ytqFazKLVYmNjYx/Krh7BySPhSUFKClUeNmBjY2PvYU82YhIMTCKB0ZlTbGxs7CPY1SOS+QGaavDQG0UVomhsbGzsBezPDoPyUKHaWjSLHzY2NvYCdvQPfXHpyQGdvJSOiiI2Njb2AnZSEvK4t1oUeyspbAc2Njb2oexJ1Jo3EpNjN3nk8M3KsbGxsQ9l90pCdSm9EVLvvnzmFBsbG/sIdl60qsdx8vKW85qhAjY2NvYCdjIA6jUS+Yb2rh8/soONjY19NDtvRSaxQb62USqCjY2NvYadD5XyTextcWGMhY2Njb2AXQ13P7UpybffPy35OTY2NvbZ7OrgpvpqNSqoxgnRZ7GxsbEPZe+5sLGxsbGxsbGxsR9z/QNHEMOmldj/MwAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/python/">python</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2018/06/19/python-mongodb/" class="leancloud-views_num" data-flag-title="python-mongodb">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=python-mongodb&url=https://frank-ho.github.io/2018/06/19/python-mongodb/index.html&pic=https://frank-ho.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=python-mongodb&url=https://frank-ho.github.io/2018/06/19/python-mongodb/index.html&via=Frank-HO" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://frank-ho.github.io/2018/06/19/python-mongodb/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://frank-ho.github.io/2018/06/19/python-mongodb/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <pre><code class="shell">install pip:
+    sudo apt-get install python3-pip
+
+upgrading pip:
+    pip install -U pip(on linux or macos)
+    python -m pip install -U pip(on windows)
+
+install pymongo:
+    sudo pip install pymongo
+
+sudo apt-get install mongodb
+
+mkdir /data/db
+
+start mongodb:./bin/mongod --dbpath=/data/db
+
+start mongodb daemon:
+    mkdir /log
+    mongod --dbpath=/data/db/ --fork --logpath=/log/mongodb.log
+    or
+    mkdir /opt/mongodb/conf.d/mongodb.conf
+    vim /opt/mongodb/conf.d/mongodb.conf
+    and paste bellow:
+        port=27017
+        dbpath=/data/db
+        logpath=/log/mongodb.log
+        logappend=true
+        fork=true
+    mongod -c /opt/mongodb/conf.d/mongodb.conf
+
+</code></pre>
+<p>connect.py</p>
+<p><code>`</code>py<br>import pymongo<br>from pymongo import *</p>
+<h1 id="get-database-connection"><a href="#get-database-connection" class="headerlink" title="get database connection"></a>get database connection</h1><p>client = MongoClient()</p>
+<h1 id="the-same-way"><a href="#the-same-way" class="headerlink" title="the same way"></a>the same way</h1><h1 id="client-MongoClient-“localhost”-27017"><a href="#client-MongoClient-“localhost”-27017" class="headerlink" title="client = MongoClient(“localhost”,27017)"></a>client = MongoClient(“localhost”,27017)</h1><h1 id="client-MongoClient-“mongodb-localhost-27017-“"><a href="#client-MongoClient-“mongodb-localhost-27017-“" class="headerlink" title="client = MongoClient(“mongodb://localhost:27017/“)"></a>client = MongoClient(“mongodb://localhost:27017/“)</h1><h1 id="assign-database-and-collection-to-operat"><a href="#assign-database-and-collection-to-operat" class="headerlink" title="assign database and collection to operat"></a>assign database and collection to operat</h1><p>db = client.test_db<br>collection = db.test_collection</p>
+<h1 id="IDUS"><a href="#IDUS" class="headerlink" title="IDUS"></a>IDUS</h1><h1 id="insert"><a href="#insert" class="headerlink" title="insert"></a>insert</h1><p>mydict = {“name”: “cursor”, “sex”: “female”, “job”: “dev”}<br>collection.insert(mydict)<br>collection.insert_one(mydict)<br>mylist = []<br>mylist.append(mydict)</p>
+<h1 id="insert-many-param-must-be-list"><a href="#insert-many-param-must-be-list" class="headerlink" title="insert_many param must be list"></a>insert_many param must be list</h1><p>collection.insert_many(mylist)</p>
+<h1 id="find"><a href="#find" class="headerlink" title="find"></a>find</h1><h1 id="find-one-just-show-meet-the-conditions-first-collection"><a href="#find-one-just-show-meet-the-conditions-first-collection" class="headerlink" title="find_one() just show meet the conditions first collection"></a>find_one() just show meet the conditions first collection</h1><h1 id="find-return-all-the-object-array-which-meet-the-conditions"><a href="#find-return-all-the-object-array-which-meet-the-conditions" class="headerlink" title="find() return all the object array which meet the conditions"></a>find() return all the object array which meet the conditions</h1><p>collection.find({“name”: “cursor”})[0]<br>collection.find({“name”: “cursor”})[1]</p>
+<h1 id="use-for-in-operation-to-loop-all"><a href="#use-for-in-operation-to-loop-all" class="headerlink" title="use for-in operation to loop all"></a>use for-in operation to loop all</h1><p>for i in collection.find({“name”: “cursor”}):<br>    print(i)</p>
+<h1 id="search-assign-conditions"><a href="#search-assign-conditions" class="headerlink" title="search assign conditions"></a>search assign conditions</h1><p>collection.find_one({“name”: “cursor”})<br>collection.find_one({“name”: “cursor”, “sex”: “female”})</p>
+<h1 id="use-count"><a href="#use-count" class="headerlink" title="use .count()"></a>use .count()</h1><p>collection.find().count()  # this is equal to collection.count()<br>collection.find({“name”: “cursor”}).count()</p>
+<h1 id="条件查询-lt-lt-gt-gt-lte-lt-gte-gt-ne"><a href="#条件查询-lt-lt-gt-gt-lte-lt-gte-gt-ne" class="headerlink" title="条件查询 $lt(&lt;) $gt(&gt;) $lte(&lt;=) $gte(&gt;=) #ne(!=)"></a>条件查询 $lt(&lt;) $gt(&gt;) $lte(&lt;=) $gte(&gt;=) #ne(!=)</h1><p>collection.find({“age”: {“$lt”: 30}})</p>
+<h1 id="sort-the-find-result"><a href="#sort-the-find-result" class="headerlink" title="sort the find result"></a>sort the find result</h1><p>collection.find().sort(“age”)  # defult ASC<br>collection.find().sort(“age”, pymongo.ASCENDING)<br>collection.find().sort(“age”, pymongo.DESCENDING)</p>
+<h1 id="查询-database中所有collection"><a href="#查询-database中所有collection" class="headerlink" title="查询 database中所有collection"></a>查询 database中所有collection</h1><p>db.collection_names()<br>db.collection_names(include_system_collections=False)  # 不包括系统collection，一般指的是system.indexes</p>
+<h1 id="update"><a href="#update" class="headerlink" title="update"></a>update</h1><p>temp = collection.find_one({“name”: “Lucy”})<br>temp2 = temp.copy()<br>temp[“name”] = “Jordan”</p>
+<h1 id="如果此时temp-“-id”-在该collection中已经存在，则-save-为更新操作，与-replace-one-作用相同，否则-save-为插入操作，与-insert-one-作用相同。"><a href="#如果此时temp-“-id”-在该collection中已经存在，则-save-为更新操作，与-replace-one-作用相同，否则-save-为插入操作，与-insert-one-作用相同。" class="headerlink" title="如果此时temp[“_id”]在该collection中已经存在，则.save()为更新操作，与 .replace_one() 作用相同，否则 .save() 为插入操作，与 .insert_one() 作用相同。"></a>如果此时temp[“_id”]在该collection中已经存在，则.save()为更新操作，与 .replace_one() 作用相同，否则 .save() 为插入操作，与 .insert_one() 作用相同。</h1><p>collection.save(temp)  # 或 .update() ，注意参数形式<br>collection.update(temp, temp2)  # 将temp更新为temp2</p>
+<h1 id="还要注意的一点是，-replace-one-需要传入两个参数，分别为当前document和要更新为的-document-，与-update-相同"><a href="#还要注意的一点是，-replace-one-需要传入两个参数，分别为当前document和要更新为的-document-，与-update-相同" class="headerlink" title="还要注意的一点是，.replace_one()需要传入两个参数，分别为当前document和要更新为的 document ，与 .update() 相同"></a>还要注意的一点是，.replace_one()需要传入两个参数，分别为当前document和要更新为的 document ，与 .update() 相同</h1><h1 id="collection-replace-one-old-document-new-document"><a href="#collection-replace-one-old-document-new-document" class="headerlink" title="collection.replace_one(old_document, new_document)"></a>collection.replace_one(old_document, new_document)</h1><h1 id="delete"><a href="#delete" class="headerlink" title="delete"></a>delete</h1><p>collection.remove(temp)  # 即便该temp不存在也不会报错<br>collection.delete_one(temp)<br>collection.delete_many(temp)  # 与 .insert_many() 不同，在temp不是list类型时也不会报错</p>
+<h1 id="JSON序列化与反序列化"><a href="#JSON序列化与反序列化" class="headerlink" title="JSON序列化与反序列化"></a>JSON序列化与反序列化</h1><p>import json</p>
+<h1 id="如果想序列化为标准-JSON-格式，两种方式，方式一，json-包中的-dumps："><a href="#如果想序列化为标准-JSON-格式，两种方式，方式一，json-包中的-dumps：" class="headerlink" title="如果想序列化为标准 JSON 格式，两种方式，方式一，json 包中的 dumps："></a>如果想序列化为标准 JSON 格式，两种方式，方式一，json 包中的 dumps：</h1><p>for i in collection.find({“name”: “cursor”}):<br>    del i[“_id”]  # 不能直接转换，无法识别ObjectId<br>    json.dumps(i)</p>
+<h1 id="bson-json-util包中封装的-dumps："><a href="#bson-json-util包中封装的-dumps：" class="headerlink" title="bson.json_util包中封装的 dumps："></a>bson.json_util包中封装的 dumps：</h1><p>from bson import Binary, Code<br>from bson.json_util import dumps</p>
+<p>dumps([{‘foo’: [1, 2]},<br>       {‘bar’: {‘hello’: ‘world’}},<br>       {‘code’: Code(“function x() { return1; }”)},<br>       {‘bin’: Binary(“”)}])</p>
+<h1 id="‘-“foo”-1-2-“bar”-“hello”-”world”-“code”-“-code”-“function-x-return-1-”-“-scope”-“bin”-“-binary”-“”-“-type”-“00”-’"><a href="#‘-“foo”-1-2-“bar”-“hello”-”world”-“code”-“-code”-“function-x-return-1-”-“-scope”-“bin”-“-binary”-“”-“-type”-“00”-’" class="headerlink" title="‘[{“foo”: [1, 2]}, {“bar”: {“hello”:”world”}}, {“code”: {“$code”: “function x(){ return 1; }”, “$scope”: {}}}, {“bin”:{“$binary”: “”, “$type”: “00”}}]’"></a>‘[{“foo”: [1, 2]}, {“bar”: {“hello”:”world”}}, {“code”: {“$code”: “function x(){ return 1; }”, “$scope”: {}}}, {“bin”:{“$binary”: “”, “$type”: “00”}}]’</h1><h1 id="对应的反序列化方法为bson-json-util-loads"><a href="#对应的反序列化方法为bson-json-util-loads" class="headerlink" title="对应的反序列化方法为bson.json_util.loads()"></a>对应的反序列化方法为bson.json_util.loads()</h1>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'https://frank-ho.github.io/2018/06/19/python-mongodb/', // 可选。默认为 location.href
+        owner: 'FrankHo',
+        repo: 'cursorfei.github.io',
+        oauth: {
+            client_id: '78dbaebd19a04c62d526',
+            client_secret: 'dc8bf602f1f77f4c758e35d19ebc3ff6329aa8ae',
+        },
+    })
+    gitment.render('container')
+</script>
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/06/19/ubuntu-nginx-Supervisor/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/06/19/JSBridge解析/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Frank-HO's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        frank92.ho@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">43</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Android开发/">Android开发<span class="sidebar_archives-count">18</span></a></li><li><a class="sidebar_archives-link" href="/categories/JAVA/">JAVA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaWEB/">JavaWEB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Linux/">Linux<span class="sidebar_archives-count">16</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据库/">数据库<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/日常技术/">日常技术<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Frank's space
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('vcadNlPutVSrslWor8Le8Bcq-gzGzoHsz', 'C4ejl7zx9rkwRa2QPzV3Rz32');
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+
+
+   <!-- Gitment -->
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',false);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+<script type="text/ls-javascript" id="Bing-Background-script">
+    queue.offer(function(){
+        $('body').attr('data-original', 'https://api.i-meto.com/bing?[object Object]');
+    });
+</script>
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2015;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

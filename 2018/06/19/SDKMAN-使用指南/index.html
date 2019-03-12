@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="zh">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
+
+
+
+    <link rel="dns-prefetch" href="https://imsun.github.io"/>
+
+
+
+    <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+
+
+
+    <link rel="dns-prefetch" href="https://fonts.proxy.ustclug.org"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            SDKMAN!使用指南 | 
+        
+        Frank&#39;s space
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="Android,Linux,JavaWEB,Linux">
+    <meta name="theme-color" content="#0097A7">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #00838F;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
+
+  .toTop {
+    background: #757575 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
+
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body {
+        background-color: #F5F5F5;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="https://fonts.proxy.ustclug.org/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Frank&#39;s space">
+    <meta name="msapplication-starturl" content="https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/">
+    <meta name="msapplication-navbutton-color" content="#0097A7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Frank&#39;s space">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Site Verification -->
+    <meta name="google-site-verification" content="google2f9be32c76c43d2c" />
+    
+
+    <!-- RSS -->
+    
+        
+            <link rel=alternate type="application/atom+xml" href="/atom.xml">
+        
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="SDKMAN!使用指南 | Frank&#39;s space">
+    <meta property="og:image" content="/img/favicon.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="Linux"> 
+
+    
+        <meta property="article:published_time" content="Tue Jun 19 2018 22:00:53 GMT+0800">
+        <meta property="article:modified_time" content="Tue Mar 12 2019 14:05:56 GMT+0800">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/index.html",
+    "headline": "SDKMAN!使用指南",
+    "datePublished": "Tue Jun 19 2018 22:00:53 GMT+0800",
+    "dateModified": "Tue Mar 12 2019 14:05:56 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Frank-HO",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Welcome to Frank's space"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Frank&#39;s space",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",LinuxAndroid,Linux,JavaWEB",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-121092598-1', 'auto');ga('send', 'pageview');
+</script>
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+</head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#0-SDKMAN"><span class="post-toc-number">1.</span> <span class="post-toc-text">0.SDKMAN!</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-安装"><span class="post-toc-number">2.</span> <span class="post-toc-text">1.安装</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-安装到自定义位置"><span class="post-toc-number">3.</span> <span class="post-toc-text">2.安装到自定义位置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-Beta通道"><span class="post-toc-number">4.</span> <span class="post-toc-text">3.Beta通道</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#5-使用"><span class="post-toc-number">5.</span> <span class="post-toc-text">5.使用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-0-列出支持的软件"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">5.0 列出支持的软件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-1-列出软件的版本"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">5.1 列出软件的版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-4-安装本地包"><span class="post-toc-number">5.3.</span> <span class="post-toc-text">5.4 安装本地包</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-5-卸载包"><span class="post-toc-number">5.4.</span> <span class="post-toc-text">5.5 卸载包</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-6-选择版本"><span class="post-toc-number">5.5.</span> <span class="post-toc-text">5.6 选择版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-7-设置默认版本"><span class="post-toc-number">5.6.</span> <span class="post-toc-text">5.7 设置默认版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-8-查看当前使用的版本"><span class="post-toc-number">5.7.</span> <span class="post-toc-text">5.8 查看当前使用的版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-9-sdk版本升级"><span class="post-toc-number">5.8.</span> <span class="post-toc-text">5.9 sdk版本升级</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-10-离线模式"><span class="post-toc-number">5.9.</span> <span class="post-toc-text">5.10 离线模式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-11-SDKMAN-版本升级"><span class="post-toc-number">5.10.</span> <span class="post-toc-text">5.11 SDKMAN!版本升级</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                SDKMAN!使用指南
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Frank-HO</strong>
+        <span>6月 19, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC2UlEQVR42u3aQY7jMAwEwPz/07vXuTjppjwDRyqfAgO2VcqBIFuvf0deL2xsbGxsbGxsbOxHsl/xdfXUzztX74yWdfG25P3RmrGxsbG3ZucLumK/X3r+hvewpTVjY2NjH8BOPvOemmxWi09+J1uDjY2NjT1j5+/MGxhsbGxs7LvY+SApIbVDJWxsbGzs2YCmLTB5kWsbmD+dpWFjY2M/np2Hps/5/af5NjY2NvaD2e2VbErboszCg3rl2NjY2Juy88Iwe2pl0N8GDx++hY2Njb01+65goL2TF7N8IHW5WdjY2Nhbs+89apO/4a6BUdLAYGNjY5/DzsdDbYlqW458ndGIChsbG/sAdj7WjwrGrQOj9s/AxsbGPo2dgPMgNo8W2qfawRM2Njb2CeyVhebDqVnYMBtaRa0INjY29kbsPChtkbPWZf3+0kklbGxs7K9lJ2OjleM49QCofOfSSSVsbGzsL2evj3VuKzABLAp0sbGxsQ9jz8LXWRszGyq11DroxcbGxt6C3S50pcC0EUJ7JKiOB7CxsbE3YreHHdutybdgNmz68H5sbGzsTdlt0SrG8WUD0x6mzIsoNjY29t7s/KD87Ihk28bkJS25j42NjX0OezYGagvYehi8EjBjY2Nj783OP5MXoXys3wbPs1gCGxsbe29220KstA3td3NenYpgY2Njb8S+a7jfhsRtOfz1VgQbGxv7y9krJSdvJPJi2cYPS4cvsbGxsTdit4HuLJTNDwOtrAEbGxv7BHZ73XXIJg8S8nL4ITzAxsbG3pTdFol2PJSM8u/9XZ9UwsbGxt6CnRetpFTcVSCTELcok9jY2NgHsNsDNG3zsDI2moUE2NjY2NhJhJBHC/lBnGRr6r8EGxsbGzteShIq5EWubZl+sRXBxsbGfjy7XXTyydl2tOHxUgHDxsbG3oLdDm5mQ6h1Xv4UNjY29jnscy5sbGxsbGxsbGzsx1z/AVJe7G9ELDa/AAAAAElFTkSuQmCC">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Linux/">Linux</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    <!-- Leancloud Views -->
+        <a class="post_share-link" href="#">
+            <li class="mdl-menu__item">
+                <span id="/2018/06/19/SDKMAN-使用指南/" class="leancloud-views_num" data-flag-title="SDKMAN!使用指南">
+     &nbsp;浏览量
+</span>
+
+            </li>
+        </a>
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=SDKMAN!使用指南&url=https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/index.html&pic=https://frank-ho.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=SDKMAN!使用指南&url=https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/index.html&via=Frank-HO" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><img src="http://upload-images.jianshu.io/upload_images/1342270-5b398068c228503e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="sdkman.png"></p>
+<h2 id="0-SDKMAN"><a href="#0-SDKMAN" class="headerlink" title="0.SDKMAN!"></a>0.<a href="http://sdkman.io/install.html" target="_blank" rel="noopener">SDKMAN!</a></h2><p>是在大多数基于Unix的系统上管理多个软件开发工具包的并行版本的工具。它提供了一个方便的命令行界面（CLI）和API来安装，切换，删除和列出sdk相关信息。以下是一些特性:</p>
+<ul>
+<li>By Developers, for Developers<br>安装SDK不再需要去各种下载页面去下载,解压,以及设置xxx_HOME或者PATH环境变量.</li>
+<li>多平台<br>可以在任何基于UNIX的平台上运行：Mac OSX，Linux，Cygwin，Solaris和FreeBSD。 <a href="https://github.com/flofreud/posh-gvm" target="_blank" rel="noopener">Powershell CLI</a>版本适用于Windows用户。</li>
+<li>全套JAVA支持<br>为Java，Groovy，Scala，Kotlin和Ceylon等JVM安装软件开发工具包。 Ant，Gradle，Grails，Maven，SBT，Spark，Spring Boot，Vert.x以及其他许多支持。</li>
+<li>APIs<br>使用开放的Broker REST API可以轻松地编写新的客户端。供应商可以通过安全的供应商API发布自己的版本。</li>
+<li>轻量<br>只需要有<a href="http://curl.haxx.se/" target="_blank" rel="noopener">curl</a> \ <a href="http://www.info-zip.org/" target="_blank" rel="noopener">zip/unzip</a>就可以在<a href="https://www.gnu.org/software/bash/" target="_blank" rel="noopener">bash</a>中通过命令使用.还可和<a href="http://www.zsh.org/" target="_blank" rel="noopener">ZSH</a>一起使用.</li>
+</ul>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h2><p>在终端中输入以下命令进行安装:</p>
+<pre><code class="sh">$ curl -s &quot;https://get.sdkman.io&quot; | bash
+</code></pre>
+<p>如果提示缺少zip或unzip,安装后再次执行上面的命令即可.</p>
+<pre><code class="sh"># 安装需要的组件,Ubuntu为例
+$ apt install zip
+$ apt install unzip
+</code></pre>
+<p>安装完成后,在终端中输入:</p>
+<pre><code class="sh">$ source &quot;$HOME/.sdkman/bin/sdkman-init.sh&quot;
+</code></pre>
+<p>输入以下命令查看安装情况:</p>
+<pre><code class="sh">$ sdk version
+# 以下为输出
+==== BROADCAST =================================================================
+* 09/01/18: Gradle 4.5-rc-1 released on SDKMAN! #gradle
+* 06/01/18: sbt 1.1.0 released on SDKMAN! #scala
+* 20/12/17: Gradle 4.4.1 released on SDKMAN! #gradle
+================================================================================
+
+SDKMAN 5.6.0+287
+</code></pre>
+<h2 id="2-安装到自定义位置"><a href="#2-安装到自定义位置" class="headerlink" title="2.安装到自定义位置"></a>2.安装到自定义位置</h2><p>SDKMAN的默认安装位置为:$HOME/.sdkman.你可以通过设置SDKMAN_DIR环境变量来修改安装位置:</p>
+<pre><code class="sh">$ export SDKMAN_DIR=&quot;/usr/local/sdkman&quot; &amp;&amp; curl -s &quot;https://get.sdkman.io&quot; | bash
+</code></pre>
+<h2 id="3-Beta通道"><a href="#3-Beta通道" class="headerlink" title="3.Beta通道"></a>3.Beta通道</h2><p>SDKMAN的Bate版,包含一些cli的新功能,但是可能会不稳定.如果需要使用Bate版本,需要修改~/.sdkman/etc/config文件:</p>
+<pre><code class="sh">sdkman_beta_channel=true
+</code></pre>
+<p>然后打开一个终端执行:</p>
+<pre><code>$ sdk selfupdate force
+```sh
+如果不需要使用Bate版本了,将上面的配置修改为false,再执行一次更新即可.
+
+## 4.卸载
+SDKMAN!没有提供自动化的卸载方法,可以通过以下命令进行卸载:
+```sh
+tar zcvf ~/sdkman-backup_$(date +%F-%kh%M).tar.gz -C ~/ .sdkman
+$ rm -rf ~/.sdkman
+</code></pre><p>然后从.bashrc，.bash_profile和/或.profile文件中编辑和删除初始化代码片段。如果您使用ZSH，请将其从.zshrc文件中删除。要删除的代码片段如下所示：</p>
+<pre><code class="sh">#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+[[ -s &quot;/home/dudette/.sdkman/bin/sdkman-init.sh&quot; ]] &amp;&amp; source &quot;/home/dudette/.sdkman/bin/sdkman-init.sh&quot;
+</code></pre>
+<h2 id="5-使用"><a href="#5-使用" class="headerlink" title="5.使用"></a>5.使用</h2><h3 id="5-0-列出支持的软件"><a href="#5-0-列出支持的软件" class="headerlink" title="5.0 列出支持的软件"></a>5.0 列出支持的软件</h3><pre><code class="sh">$ sdk list
+# 执行命令后进入vi模式进行阅读,q退出阅读
+</code></pre>
+<h3 id="5-1-列出软件的版本"><a href="#5-1-列出软件的版本" class="headerlink" title="5.1 列出软件的版本"></a>5.1 列出软件的版本</h3><pre><code class="sh">$ sdk list gradle
+
+================================================================================
+Available Gradle Versions
+================================================================================
+     4.5-rc-1             4.2.1                3.1                  2.11           
+ &gt; * 4.4.1                4.2-rc-2             3.0                  2.10           
+     4.4-rc-6             4.2-rc-1             2.9                  2.1            
+     4.4-rc-5             4.2                  2.8                  2.0            
+     4.4-rc-4             4.1                  2.7                  1.9            
+     4.4-rc-3             4.0.2                2.6                  1.8            
+     4.4-rc-2             4.0.1                2.5                  1.7            
+     4.4-rc-1             4.0                  2.4                  1.6            
+     4.4                  3.5.1                2.3                  1.5            
+     4.3.1                3.5                  2.2.1                1.4            
+     4.3-rc-4             3.4.1                2.2                  1.3            
+     4.3-rc-3             3.4                  2.14.1               1.2            
+     4.3-rc-2             3.3                  2.14                 1.12           
+     4.3-rc-1             3.2.1                2.13                 1.11           
+     4.3                  3.2                  2.12                 1.10           
+
+================================================================================
++ - local version
+* - installed
+&gt; - currently in use
+================================================================================
+
+```sh
+### 5.2 安装gradle
+</code></pre>
+<p>$ sdk install gradle</p>
+<p>Downloading: gradle 4.4.1</p>
+<p>In progress…</p>
+<p>######################################################################## 100.0%</p>
+<p>Installing: gradle 4.4.1<br>Done installing!</p>
+<p>Setting gradle 4.4.1 as default.</p>
+<pre><code>### 5.3 安装指定版本软件
+```sh
+# 后面跟上版本号即可
+$ sdk install gradle 4.4.1
+</code></pre><h3 id="5-4-安装本地包"><a href="#5-4-安装本地包" class="headerlink" title="5.4 安装本地包"></a>5.4 安装本地包</h3><pre><code class="sh">$ sdk install groovy 3.0.0-SNAPSHOT /path/to/groovy-3.0.0-SNAPSHOT
+</code></pre>
+<h3 id="5-5-卸载包"><a href="#5-5-卸载包" class="headerlink" title="5.5 卸载包"></a>5.5 卸载包</h3><pre><code class="sh">$ sdk uninstall scala 2.11.6
+</code></pre>
+<h3 id="5-6-选择版本"><a href="#5-6-选择版本" class="headerlink" title="5.6 选择版本"></a>5.6 选择版本</h3><p>选择一个版本用于当前终端:</p>
+<pre><code class="sh">$ sdk use scala 2.12.1
+</code></pre>
+<h3 id="5-7-设置默认版本"><a href="#5-7-设置默认版本" class="headerlink" title="5.7 设置默认版本"></a>5.7 设置默认版本</h3><pre><code class="sh">$ sdk default scala 2.11.6
+</code></pre>
+<h3 id="5-8-查看当前使用的版本"><a href="#5-8-查看当前使用的版本" class="headerlink" title="5.8 查看当前使用的版本"></a>5.8 查看当前使用的版本</h3><pre><code class="sh">$ sdk current java
+  Using java version 8u111
+
+#查看所有本地包的当前版本
+$ sdk current
+  Using:
+  groovy: 2.4.7
+  java: 8u111
+  scala: 2.12.1
+</code></pre>
+<h3 id="5-9-sdk版本升级"><a href="#5-9-sdk版本升级" class="headerlink" title="5.9 sdk版本升级"></a>5.9 sdk版本升级</h3><pre><code class="sh">$ sdk upgrade springboot
+  Upgrade:
+  springboot (1.2.4.RELEASE, 1.2.3.RELEASE &lt; 1.2.5.RELEASE)
+
+# 本地所有sdk全部升级
+$ sdk upgrade
+  Upgrade:
+  gradle (2.3, 1.11, 2.4, 2.5 &lt; 2.6)
+  grails (2.5.1 &lt; 3.0.4)
+  springboot (1.2.4.RELEASE, 1.2.3.RELEASE &lt; 1.2.5.RELEASE)
+</code></pre>
+<h3 id="5-10-离线模式"><a href="#5-10-离线模式" class="headerlink" title="5.10 离线模式"></a>5.10 离线模式</h3><pre><code class="sh">$ sdk offline enable
+  Forced offline mode enabled.
+
+$ sdk offline disable
+  Online mode re-enabled!
+</code></pre>
+<p>当电脑没有网的时候,离线模式会进行自动切换.</p>
+<h3 id="5-11-SDKMAN-版本升级"><a href="#5-11-SDKMAN-版本升级" class="headerlink" title="5.11 SDKMAN!版本升级"></a>5.11 SDKMAN!版本升级</h3><pre><code class="sh">$ sdk selfupdate
+
+# 强制重新安装
+$ sdk selfupdate force
+</code></pre>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 gitcoment -->
+<div id="gitment-comment">
+    <!-- Gitment 评论框 -->
+<div id="container"></div>
+</div>
+<style>
+    #gitment-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'https://frank-ho.github.io/2018/06/19/SDKMAN-使用指南/', // 可选。默认为 location.href
+        owner: 'FrankHo',
+        repo: 'cursorfei.github.io',
+        oauth: {
+            client_id: '78dbaebd19a04c62d526',
+            client_secret: 'dc8bf602f1f77f4c758e35d19ebc3ff6329aa8ae',
+        },
+    })
+    gitment.render('container')
+</script>
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/06/19/Linux查看资源消耗/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/06/19/nohup命令介绍与应用/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Frank-HO's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        frank92.ho@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="#" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2018/06/">六月 2018<span class="sidebar_archives-count">43</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                分类
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Android开发/">Android开发<span class="sidebar_archives-count">18</span></a></li><li><a class="sidebar_archives-link" href="/categories/JAVA/">JAVA<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaWEB/">JavaWEB<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Linux/">Linux<span class="sidebar_archives-count">16</span></a></li><li><a class="sidebar_archives-link" href="/categories/数据库/">数据库<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/日常技术/">日常技术<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+
+    <!-- Article Number  -->
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Frank's space
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+    
+        <script>lsloader.load("sm_js","/js/smoothscroll.js?tNQK2Tw2SUL8a1Scn/Mgew==", true)</script>
+    
+
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('vcadNlPutVSrslWor8Le8Bcq-gzGzoHsz', 'C4ejl7zx9rkwRa2QPzV3Rz32');
+    </script>
+    <script type="text/ls-javascript" id="leancloud-views-script">
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+
+
+
+   <!-- Gitment -->
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('<link rel="stylesheet" href="/css/uc.css">');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',false);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+<script type="text/ls-javascript" id="Bing-Background-script">
+    queue.offer(function(){
+        $('body').attr('data-original', 'https://api.i-meto.com/bing?[object Object]');
+    });
+</script>
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2015;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
